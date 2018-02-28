@@ -1,0 +1,395 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">    
+    
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+    
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    
+    <ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    
+    <LinearLayout
+		android:layout_width="match_parent"
+    	android:layout_height="match_parent" 
+    	android:orientation="vertical">
+    
+    <TextView 
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="1.The number of eight-bit strings beginning with either 111 or 101 is?"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg1"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="1">
+    	<RadioButton
+            android:id="@+id/q1o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="64"/>
+        <RadioButton
+            android:id="@+id/q1o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="128"/> 
+        <RadioButton
+            android:id="@+id/q1o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="265"/>
+        <RadioButton
+            android:id="@+id/q1o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="None of the above"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/q2"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="2.Which of the following conversion is not possible (algorithmically)?"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg2"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="2">
+    	<RadioButton
+            android:id="@+id/q2o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="regular grammar to context-free grammar"/>
+        <RadioButton
+            android:id="@+id/q2o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="nondeterministic FSA to deterministic FSA"/> 
+        <RadioButton
+            android:id="@+id/q2o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="nondeterministic PDA to deterministic PDA"/>
+        <RadioButton
+            android:id="@+id/q2o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="nondeterministic TM to deterministic TM"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/q3"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="3.Recursively enumerable languages are not closed under:"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg3"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="3">
+    	<RadioButton
+            android:id="@+id/q3o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Union"/>
+        <RadioButton
+            android:id="@+id/q3o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Intersection"/> 
+        <RadioButton
+            android:id="@+id/q3o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Complementation"/>
+        <RadioButton
+            android:id="@+id/q3o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Concatenation"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/q4"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="4.Grammar that produce more than one Parse tree for same sentence is:"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg4"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="4">
+    	<RadioButton
+            android:id="@+id/q4o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Ambiguous"/>
+        <RadioButton
+            android:id="@+id/q4o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Unambiguous"/> 
+        <RadioButton
+            android:id="@+id/q4o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Complementation"/>
+        <RadioButton
+            android:id="@+id/q4o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Concatenation Intersection"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/q5"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="5.The finite automata accept the following language:"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg5"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="5">
+    	<RadioButton
+            android:id="@+id/q5o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="context free language"/>
+        <RadioButton
+            android:id="@+id/q5o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="regular language"/> 
+        <RadioButton
+            android:id="@+id/q5o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="context sensitive language"/>
+        <RadioButton
+            android:id="@+id/q5o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="all of the above"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/q6"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="6.Write regular expression to denote a language L which accepts all the strings which begin or end with either 00 or 11"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg6"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="6">
+    	<RadioButton
+            android:id="@+id/q6o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="[(00(0+1)* 11] + [11( 0 + 1)* 00]"/>
+        <RadioButton
+            android:id="@+id/q6o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="[(00+11) (0+1)+] + [( 0 + 1)+ (00+11)]"/> 
+        <RadioButton
+            android:id="@+id/q6o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="[(00+11) (0+1)*] + [( 0 + 1)* (00+11)]"/>
+        <RadioButton
+            android:id="@+id/q6o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="(00+11) (0+1)* (00+11)"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/q7"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="7.Write the regular expression to denote the language L over ? ={ a,b} such that all the string do not contain the substring “ ab”"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg7"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="7">
+    	<RadioButton
+            android:id="@+id/q7o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="a*b*"/>
+        <RadioButton
+            android:id="@+id/q7o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="b*a*"/> 
+        <RadioButton
+            android:id="@+id/q7o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="(ab)*"/>
+        <RadioButton
+            android:id="@+id/q7o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="(ba)*"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/q8"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="8.Assume the statements S1 and S2 given as :
+S1 : Given a context free grammarG, there exists an algorithm for determining whether L(G) is infinite.
+S2 : There exists an algorithm to determine whether two context free grammars generate the same language.
+Which of the following is true ?"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg8"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="8">
+    	<RadioButton
+            android:id="@+id/q8o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="S1 is correct and S2 is not correct"/>
+        <RadioButton
+            android:id="@+id/q8o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Both S1 and S2 are correct"/> 
+        <RadioButton
+            android:id="@+id/q8o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="Both S1 and S2 are not correct"/>
+        <RadioButton
+            android:id="@+id/q8o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="S1 is not correct and S2 is correct"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/q9"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="9.Recognize the CFL for the given CFG.
+S-> aB| bA, 
+A-> a|aS|bAA, 
+B-> b|bS|aBB"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg9"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="9">
+    	<RadioButton
+            android:id="@+id/q9o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="(1 + 010)*"/>
+        <RadioButton
+            android:id="@+id/q9o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="(01 + 10)*"/> 
+        <RadioButton
+            android:id="@+id/q9o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="(1 + 010)* (0 + lambda)"/>
+        <RadioButton
+            android:id="@+id/q9o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="(1 + 01)* (0 + lambda)"/>
+    </RadioGroup>
+    
+     <TextView 
+        android:id="@+id/q10"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="10.Regular expression for the language L = { w ∈ {0, 1}* | w has no pair of consecutive zeros} is"
+    	android:textSize="18dp"/>
+    
+    <RadioGroup 
+        android:id="@+id/Rg10"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:tag="10">
+    	<RadioButton
+            android:id="@+id/q10o1"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="strings contain equal number of a's and equal number of b's"/>
+        <RadioButton
+            android:id="@+id/q10o2"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="strings contain odd number of a's and odd number of b's"/> 
+        <RadioButton
+            android:id="@+id/q10o3"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="strings contain odd number of a's and even number of b's"/>
+        <RadioButton
+            android:id="@+id/q10o4"
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="strings contain even number of a's and even number of b's"/>
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="submit"/>
+    
+    </LinearLayout>
+    
+    </ScrollView>
+    
+ </LinearLayout>
